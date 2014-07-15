@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?> 
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center_horizontal" >
+
+		<edu.meyers.BoardView
+			android:id="@+id/board"
+			android:layout_width="300dp"
+			android:layout_height="300dp"
+			android:layout_marginTop="5dp"
+			/>
+		
+		<RelativeLayout
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"> 
+
+			<TextView android:id="@+id/information" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"         
+				android:text="info label" 
+				android:gravity="center_horizontal" 
+				android:layout_marginTop="20dp" 
+				android:textSize="20dp"/> 
+
+		    <TextView
+			    android:id="@+id/human_wins_label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="20dp"
+				android:layout_below="@id/information"
+			    android:gravity="left"
+			    android:text="Human: "
+			    android:textSize="20dp"  />
+		    <TextView
+		        android:id="@+id/human_wins"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/information"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="20dp"
+		        android:layout_toRightOf="@id/human_wins_label"
+		        android:gravity="left"
+		        android:textSize="20dp" />
+		    
+		    <TextView
+			    android:id="@+id/ties_label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBaseline="@+id/ties"
+			    android:layout_alignBottom="@+id/ties"
+			    android:layout_centerHorizontal="true"
+			    android:gravity="center_horizontal"
+			    android:text="Ties: "
+			    android:textSize="20dp" />
+			<TextView
+			    android:id="@+id/ties"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+				android:layout_below="@id/information"
+				android:layout_toRightOf="@id/ties_label"
+			    android:layout_marginTop="20dp"
+			    android:textSize="20dp"
+				android:layout_marginRight="10dp" />
+			
+
+			<TextView
+			    android:id="@+id/android_wins_label"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBaseline="@+id/ties"
+			    android:layout_alignBottom="@+id/ties"
+			    android:layout_toLeftOf="@+id/android_wins"
+			    android:gravity="right"
+			    android:text="Android: "
+			    android:textSize="20dp" />
+			<TextView
+			    android:id="@+id/android_wins"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBaseline="@+id/android_wins_label"
+			    android:layout_alignBottom="@+id/android_wins_label"
+			    android:layout_alignParentRight="true"
+			    android:gravity="right"
+			    android:textSize="20dp" />
+
+		</RelativeLayout>
+
+</LinearLayout> 

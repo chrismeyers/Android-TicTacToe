@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:id="@+id/new_game"
+          android:title="New Game"
+		  android:icon="@drawable/new_game"
+		  android:showAsAction="ifRoom|withText"/>
+
+    <item android:id="@+id/settings"
+		android:title="Settings"
+		android:icon="@drawable/difficulty_level"
+		android:showAsAction="ifRoom|withText"/>
+	
+	<item android:id="@+id/about"
+		android:title="About"
+		android:icon="@drawable/tictactoe_menu"
+		android:showAsAction="ifRoom|withText"/>
+	
+	<item android:id="@+id/Reset"
+		android:title="Reset"
+		android:icon="@drawable/reset"
+		android:showAsAction="ifRoom|withText"/>
+	
+</menu>
